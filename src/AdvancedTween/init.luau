@@ -1,3 +1,18 @@
+--[[
+
+	* AdvancedTween [Module)]
+
+	* A module based off of HaxeFlixel's FlxTween, replicated and recreated
+	to a Roblox module to have more ease when it comes to creating tweens.
+
+	Version: 1.0.0
+	Date Created: 02/08/2025
+	Date Updated: 02/08/2025
+
+	Created By @Aeronoxtic
+
+]]
+
 local AdvancedTween = {};
 AdvancedTween.__index = AdvancedTween;
 
