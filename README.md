@@ -15,9 +15,9 @@
 local AdvancedTween = require(AdvancedTween) -- Must be the path to AdvancedTween.
 
 -- Create the tween with AdvancedTween.New(...)
-local Tween = AdvancedTween.New(object, { Position = Vector3.new(150, 75, 150) }, 1.0 {
-	Easing = 'SineInOut';
-	StartDelay = 0.5;
+local Tween = AdvancedTween.New(object, { Position = Vector3.new(150, 75, 150) }, 1.0, {
+	Easing = 'SineInOut',
+	StartDelay = 0.5,
 	OnComplete = function()
 		print("Tween Completed!");
 	end
