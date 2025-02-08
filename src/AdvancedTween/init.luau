@@ -1,6 +1,6 @@
 --[[
 
-	* AdvancedTween [Module)]
+	* AdvancedTween [Module]
 
 	* A module based off of HaxeFlixel's FlxTween, replicated and recreated
 	to a Roblox module to have more ease when it comes to creating tweens.
