@@ -65,7 +65,7 @@ end
 --[[
 	Play the tween.
 ]]
-function AdvancedTween:Play() : ()
+function AdvancedTween:Play()
 
 	if (self._tween ~= nil) then
 
@@ -83,14 +83,16 @@ end
 --[[
 	Pause the tween.
 ]]
-function AdvancedTween:Pause() : ()
-
-	if (Settings.VerboseTweens) then
-		print(string.format('Paused Tween! - [ %s ]', self._currentInstance.Name));
-	end
+function AdvancedTween:Pause()
 
 	if (self._tween ~= nil) then
+
+		if (Settings.VerboseTweens) then
+			print(string.format('Paused Tween! - [ %s ]', self._currentInstance.Name));
+		end
+
 		self._tween:Pause();
+
 	end
 
 end
@@ -98,7 +100,7 @@ end
 --[[
 	Cancel the tween.
 ]]
-function AdvancedTween:Cancel() : ()
+function AdvancedTween:Cancel()
 
 	if (Settings.VerboseTweens) then
 		print(string.format('Cancelled Tween! - [ %s ]', self._currentInstance.Name));
@@ -113,7 +115,7 @@ end
 --[[
 	Yield/Stop the code until the tween finishes playing.
 ]]
-function AdvancedTween:Wait() : ()
+function AdvancedTween:Wait()
 
 	if (self._tween == nil) then
 		return;
